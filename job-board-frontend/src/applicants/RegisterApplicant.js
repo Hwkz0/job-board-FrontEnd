@@ -9,12 +9,12 @@ export default function RegisterApplicant() {
     const [applicant, setApplicant] = useState({
         applicantFirstName: "",
         applicantLastName: "",
-        applicantEmailAdress: "",
+        applicantEmailAddress: "",
         applicantPassword: "",
         applicantPhoneNumber: "",
     });
 
-    const { applicantFirstName, applicantLastName, applicantEmailAdress, applicantPassword, applicantPhoneNumber } = applicant;
+    const { applicantFirstName, applicantLastName, applicantEmailAddress, applicantPassword, applicantPhoneNumber } = applicant;
 
     const onInputChange = e => {
         setApplicant({ ...applicant, [e.target.name]: e.target.value });
@@ -66,7 +66,7 @@ export default function RegisterApplicant() {
                                 placeholder="Enter Email Address"
                                 id="applicantEmailAdress"
                                 name="applicantEmailAdress"
-                                value={applicantEmailAdress}
+                                value={applicantEmailAddress}
                                 onChange={e => onInputChange(e)}
                             />
                         </div>
