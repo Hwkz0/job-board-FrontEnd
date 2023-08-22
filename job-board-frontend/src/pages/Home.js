@@ -8,6 +8,8 @@ export default function Home() {
 
     const {getApplicantById} = useParams();
 
+    const {applicantIdToBeDeleted} = useParams();
+
     useEffect(() => {
         loadApplicants();
     },[]);

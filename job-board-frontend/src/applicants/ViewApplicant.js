@@ -30,7 +30,7 @@ export default function EditApplicant() {
 
                     <div className="card">
                         <div className="card-header">
-                            Details of Applicant with ID {applicantId}
+                            Details of Applicant with ID {getApplicantById}
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">First Name: {applicantFirstName}</li>
                                 <li className="list-group-item">Last Name: {applicantLastName}</li>

@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./layout/Navbar";
 import Home from "./pages/Home";
 import RegisterApplicant from "./applicants/RegisterApplicant";
+import EditApplicant from "./applicants/EditApplicant";
+import ViewApplicant from "./applicants/ViewApplicant";
 
 function App() {
   return (
@@ -14,7 +16,13 @@ function App() {
         <Navbar />
 
           <Routes>
-            <Route path="/register" element={<RegisterApplicant />} />
+              <Route exact path="/" element={<Home />} />
+
+              <Route exact path="/register" element={<RegisterApplicant />} />
+
+              <Route exact path="/applicant/view/:applicantId" element={<ViewApplicant />} />
+
+                <Route exact path="/applicant/edit/:applicantId" element={<EditApplicant />} />
 
             </Routes>
 
