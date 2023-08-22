@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./layout/Navbar";
-import Home from "./pages/Home";
+import ApplicantList from "./pages/ApplicantList";
 import RegisterApplicant from "./applicants/RegisterApplicant";
 import EditApplicant from "./applicants/EditApplicant";
 import ViewApplicant from "./applicants/ViewApplicant";
@@ -13,10 +12,11 @@ function App() {
     <div className="App">
       <Router>
 
-        <Navbar />
+          <Navbar/>
 
           <Routes>
-              <Route exact path="/" element={<Home />} />
+
+              <Route exact path="/" element={<ApplicantList />} />
 
               <Route exact path="/register" element={<RegisterApplicant />} />
 

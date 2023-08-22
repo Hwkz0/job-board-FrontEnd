@@ -1,26 +1,25 @@
 import React, {useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useParams} from "react-router-dom";
+import {Button} from "@mui/material";
 
-export default function Home() {
+export default function ApplicantList() {
 
     const [applicants, setApplicants] = useState([]);
 
-    const {getApplicantById} = useParams();
-
-    const {applicantIdToBeDeleted} = useParams();
+    const {applicantId} = useParams();
 
     useEffect(() => {
         loadApplicants();
     },[]);
 
     const loadApplicants = async () => {
-        const result = await axios.get("http://localhost:8080/applicant");
+        const result = await axios.get("http://localhost:8080/applicant/all-applicants");
         setApplicants(result.data);
     };
 
-    const deleteApplicant = async id => {
-        await axios.delete(`http://localhost:8080/applicant/delete/${applicantIdToBeDeleted}`);
+    const deleteApplicant = async (id) => {
+        await axios.delete(`http://localhost:8080/applicant/delete/${applicantId}`);
         loadApplicants();
     }
 
@@ -49,9 +48,9 @@ export default function Home() {
                                 <td>{applicant.applicantPassword}</td>
                                 <td>{applicant.applicantPhoneNumber}</td>
                                 <td>
-                                    <Link className="btn btn-primary mr-2" to={`/applicant/view/${applicant.applicantId}`}>View</Link>
-                                    <Link className="btn btn-outline-primary mr-2" to={`/applicant/edit/${applicant.applicantId}`}>Edit</Link>
-                                    <Link className="btn btn-danger" onClick={() => deleteApplicant(applicant.applicantId)}>Delete</Link>
+                                    <Link className="btn btn-primary mr-2" to={`/applicant/${applicant.applicantId}`}>View</Link>
+                                    <Link className="btn btn-outline-primary mr-2" to={`/applicant/update/${applicant.applicantId}`}>Edit</Link>
+                                    <Button className="btn btn-danger" onClick={() => deleteApplicant(applicant.applicantId)}>Delete</Button>
                                 </td>
                             </tr>
                         ))}

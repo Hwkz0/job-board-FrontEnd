@@ -15,10 +15,10 @@ export default function EditApplicant() {
     const {getApplicantById} = useParams();
 
 
-    const { applicantFirstName, applicantLastName, applicantEmailAdress, applicantPassword, applicantPhoneNumber } = applicant;
+    const { applicantFirstName, applicantLastName, applicantEmailAddress, applicantPassword, applicantPhoneNumber } = applicant;
 
     const onInputChange = async e => {
-        const result = await axios.get("http://localhost:8080/applicant/${getApplicantById}");
+        const result = await axios.get("http://localhost:8080/applicant/${applicantId}");
         setApplicant(result.data);
     };
 
@@ -34,7 +34,7 @@ export default function EditApplicant() {
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">First Name: {applicantFirstName}</li>
                                 <li className="list-group-item">Last Name: {applicantLastName}</li>
-                                <li className="list-group-item">Email Address: {applicantEmailAdress}</li>
+                                <li className="list-group-item">Email Address: {applicantEmailAddress}</li>
                                 <li className="list-group-item">Password: {applicantPassword}</li>
                                 <li className="list-group-item">Phone Number: {applicantPhoneNumber}</li>
                             </ul>
