@@ -5,7 +5,7 @@ I'm using react, axios, bootstrap, react-router-dom and I will probably add more
 
 ## Screenshots
 
-![Screenshot](job-board-frontend/images/RegisterPage.png)
+![Screenshot](job-board-frontend/images/LoginPage.png)
 
 
 ## Table of Contents

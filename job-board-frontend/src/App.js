@@ -6,6 +6,7 @@ import ApplicantList from "./pages/ApplicantList";
 import RegisterApplicant from "./applicants/RegisterApplicant";
 import EditApplicant from "./applicants/EditApplicant";
 import ViewApplicant from "./applicants/ViewApplicant";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
               <Route exact path="/" element={<ApplicantList />} />
 
               <Route exact path="/register" element={<RegisterApplicant />} />
+
+              <Route exact path="/login" element={<Login />} />
 
               <Route exact path="/applicant/view/:applicantId" element={<ViewApplicant />} />
 
