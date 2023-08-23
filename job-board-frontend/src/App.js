@@ -8,6 +8,7 @@ import EditApplicant from "./applicants/EditApplicant";
 import ViewApplicant from "./applicants/ViewApplicant";
 import Login from "./pages/Login";
 import FindJobs from "./pages/FindJobs";
+import HomePage from "./pages/HomePage";
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
 
           <Routes>
 
-              <Route exact path="/" element={<ApplicantList />} />
+              <Route exact path="/" element={<HomePage />} />
 
               <Route exact path="/register" element={<RegisterApplicant />} />
 

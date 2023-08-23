@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
-export default function EditApplicant() {
+export default function ViewApplicant() {
 
     const [applicant, setApplicant] = useState({
         applicantFirstName: "",

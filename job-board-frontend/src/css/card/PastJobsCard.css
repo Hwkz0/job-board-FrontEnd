@@ -1,0 +1,21 @@
+:root {
+    --bg-accent: #2f3136;
+    --bg-secondary: #484a4d;
+    --text-color: #dadce1;
+    --border: 1px solid #474a4d;
+    --border-radius: 3px;
+}
+
+.past-jobs-card-general-container {
+    display: flex;
+}
+
+.past-jobs-card {
+    background-color: var(--bg-accent);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: var(--text-color);
+    margin: 0 0 1rem;
+    padding: 1rem; /* Remove padding */
+    width: 18vw;
+}
