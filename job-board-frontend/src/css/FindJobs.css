@@ -6,7 +6,7 @@
     --border-radius: 3px;
 }
 
-.card-container {
+.general-card-container {
     display: flex;
 }
 
@@ -19,9 +19,24 @@
     margin: 0; /* Remove margins */
     padding: 0; /* Remove padding */
     display: flex;
-    align-items: center;
     box-shadow: none; /* Remove shadows */
     border-right: 1px solid dimgray; /* Change color and thickness */
+    overflow: hidden;
+}
+
+.card-middle {
+    background-color: var(--bg-secondary);
+    color: var(--text-color);
+    height: 100vh;
+    border-radius: 0; /* Remove rounded borders */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+    display: flex;
+    align-items: flex-start; /* Align contents to the top */
+    flex-grow: 1; /* Take remaining space */
+    box-shadow: none; /* Remove shadows */
+    width: 55vw; /* Set width to 65% of viewport width */
+    overflow: hidden;
 }
 
 .card-right {
@@ -35,9 +50,22 @@
     align-items: flex-start; /* Align contents to the top */
     flex-grow: 1; /* Take remaining space */
     box-shadow: none; /* Remove shadows */
+    width: 25vw; /* Set width to 15% of viewport width */
+    overflow: hidden;
 }
 
-.job-card {
+.past-jobs-card {
+    background-color: var(--bg-accent);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: var(--text-color);
+    margin: 0; /* Remove margins */
+    margin-bottom: 1rem;
+    padding: 1rem; /* Remove padding */
+    width: 18vw;
+}
+
+.jobs-card {
     background-color: var(--bg-accent);
     border-radius: var(--border-radius);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
@@ -46,4 +74,16 @@
     margin: 1rem;
     width: 50vw;
 }
+
+.events-card {
+    background-color: var(--bg-accent);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    color: var(--text-color);
+    padding: 1rem;
+    margin: 1rem;
+    width: 20vw;
+}
+
+
 

@@ -8,10 +8,10 @@ import '../css/Navbar.css';
 
 export default function Navbar() {
     return (
-        <BootstrapNavbar collapseOnSelect expand="lg" bg="tertiary" variant="light" className="navbar-brand">
+        <BootstrapNavbar collapseOnSelect expand="lg" bg="tertiary" variant="light" className="navbar fixed-top">
             <Container>
 
-                <BootstrapNavbar.Brand as={ Link } to="/" className="text-white">
+                <BootstrapNavbar.Brand as={ Link } to="/" className="navbar-brand text-white">
                     <i>Job Board</i>
                 </BootstrapNavbar.Brand>
 

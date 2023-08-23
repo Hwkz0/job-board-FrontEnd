@@ -5,10 +5,12 @@ I'm using react, axios, bootstrap, react-router-dom and I will probably add more
 
 ## Screenshots
 
+![Screenshot](job-board-frontend/images/FindJobs.png)
+
 ![Screenshot](job-board-frontend/images/LoginPage.png)
 
 
-![Screenshot](job-board-frontend/images/FindJobs.png)
+
 
 
 ## Table of Contents
