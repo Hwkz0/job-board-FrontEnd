@@ -7,6 +7,8 @@ import RegisterApplicant from "./applicants/RegisterApplicant";
 import EditApplicant from "./applicants/EditApplicant";
 import ViewApplicant from "./applicants/ViewApplicant";
 import Login from "./pages/Login";
+import FindJobs from "./pages/FindJobs";
+
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
               <Route exact path="/register" element={<RegisterApplicant />} />
 
               <Route exact path="/login" element={<Login />} />
+
+              <Route exact path="/jobs" element={<FindJobs />} />
 
               <Route exact path="/applicant/view/:applicantId" element={<ViewApplicant />} />
 

@@ -22,9 +22,6 @@ export default function Navbar() {
                         <Nav.Link as={ Link } to="/jobs">
                             Find Jobs
                         </Nav.Link>
-                        <Nav.Link as={ Link } to="/talent">
-                            Find Talent
-                        </Nav.Link>
                         <Nav.Link as={ Link } to="/login">
                             Login
                         </Nav.Link>
