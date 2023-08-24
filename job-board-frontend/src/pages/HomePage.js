@@ -1,22 +1,20 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
-import HomePageCarousel from "../components/carousels/HomePageCarousel";
+import HomePagePanel from "../components/panels/HomePagePanel";
+import HomePageTitle from "../components/HomePageTitle";
+
 
 export default function HomePage(){
     return (
         <div>
 
-            <Container>
-
-                <HomePageCarousel/>
-
-            </Container>
-
-            <Container>
 
 
-            </Container>
+                <HomePagePanel/>
+
+
+
+
 
         </div>
     );

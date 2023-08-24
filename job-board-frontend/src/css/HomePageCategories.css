@@ -1,0 +1,23 @@
+:root {
+    --bg-accent: #2f3136;
+    --bg-secondary: #242526;
+    --text-color: #dadce1;
+}
+
+.home-page-categories-general-container {
+    display: flex;
+}
+
+.home-page-categories-card-container {
+    background-color: var(--bg-secondary);
+    display: flex;
+    width: 50vw;
+    box-shadow: none; /* Remove shadows */
+    border: none;
+}
+
+.home-page-categories{
+    text-align: left;
+}
+
+

@@ -1,0 +1,21 @@
+:root {
+    --bg-accent: #2f3136;
+    --bg-secondary: #242526;
+    --text-color: #dadce1;
+}
+
+.home-page-title-general-container {
+    display: flex;
+}
+
+.home-page-title-card-container {
+    background-color: var(--bg-secondary);
+    display: flex;
+    width: 35vw;
+    box-shadow: none; /* Remove shadows */
+    border: none;
+}
+
+.home-page-title{
+    text-align: left;
+}
