@@ -1,0 +1,43 @@
+:root {
+    --bg-accent: #2f3136;
+    --bg-secondary: #484a4d;
+    --text-color: #dadce1;
+    --border: 1px solid #474a4d;
+    --border-radius: 3px;
+}
+
+.events-card-general-container {
+    display: flex;
+}
+
+.events-card {
+    background-color: var(--bg-accent);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    color: var(--text-color);
+    padding: 1rem;
+    margin: 1rem 1rem 1rem 7px;
+    width: 23vw;
+}
+
+.event-apply-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Adjust padding for smaller size */
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px; /* Adjust font size for smaller size */
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Make it a block element for centering */
+}
+
+.event-apply-button :hover {
+    background-color: #4CAF50;
+    padding: 12px 24px; /* Adjust padding for smaller size */
+    box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.24), 0 15px 40px 0 rgba(0, 0, 0, 0.19);
+}
+

@@ -1,22 +1,23 @@
-import PastJobsPanel from "../components/panels/PastJobsPanel";
-import * as React from "react";
-import '../css/FindJobs.css';
-import JobApplyPanel from "../components/panels/JobApplyPanel";
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card";
+import HomePageCarousel from "../components/carousels/HomePageCarousel";
 
-export default function HomePage() {
+export default function HomePage(){
     return (
+        <div>
 
-        // FOR NOW IT S JUST GOING TO BE A TEST PAGE FOR INDIVIDUALIZING COMPONENTS FROM /jobs PAGE
-        //LATER I LL REINTRODUCE THE CAROUSEL AND MAIN PAGE COMPONENTS
+            <Container>
+
+                <HomePageCarousel/>
+
+            </Container>
+
+            <Container>
 
 
-        <div className={"general-card-container"}>
-
-        <PastJobsPanel/>
-
-        <JobApplyPanel/>
+            </Container>
 
         </div>
-
     );
-}
+};

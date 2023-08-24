@@ -10,25 +10,26 @@ export default function PastJobsCard() {
 
     const pastJobData = [
         {
-            jobTitle: "Job Title 1",
-            companyName: "Company Name 1",
-            employmentDate: "Employment Date 1",
-            jobPay: "Pay 1.",
+            jobTitle: "Software Engineer",
+            companyName: "InnovateTech Labs",
+            employmentDate: " 28 June 2022 - 9 August 2022",
+            jobPay: "$500",
         },
         {
-            jobTitle: "Job Title 2",
-            companyName: "Company Name 2",
-            employmentDate: "Employment Date 2",
-            jobPay: "Pay 2.",
+            jobTitle: "Social Media Manager",
+            companyName: "GrowthVista Media",
+            employmentDate: "10 February 2021 - 18 February 2021",
+            jobPay: "$325",
         },
         {
-            jobTitle: "Job Title 3",
-            companyName: "Company Name 3",
-            employmentDate: "Employment Date 3",
-            jobPay: "Pay 3.",
+            jobTitle: "Technical Support Specialist",
+            companyName: "RapidTech Solutions",
+            employmentDate: " 19 August 2020 - 20 September 2020",
+            jobPay: "$900",
         },
-
     ];
+
+
 
 
     return pastJobData.map((pastJob, index) => (

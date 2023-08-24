@@ -12,7 +12,7 @@ export default function Navbar() {
             <Container>
 
                 <BootstrapNavbar.Brand as={ Link } to="/" className="navbar-brand text-white">
-                    <i>Job Board</i>
+                    Job Board
                 </BootstrapNavbar.Brand>
 
                 <BootstrapNavbar.Toggle aria-controls="responsive-navbar-nav" />

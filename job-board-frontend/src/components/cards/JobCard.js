@@ -11,19 +11,19 @@ export default function JobCard() {
 
     const jobData = [
         {
-            companyName: "Company Name 1",
-            jobTitle: "Job Title 1",
-            jobDescription: "Job Description 1 Job Description 1",
+            companyName: "TechFusion Solutions",
+            jobTitle: "Junior Web Developer",
+            jobDescription: "Build interactive websites and web applications. Collaborate with a skilled team to create dynamic user experiences.",
         },
         {
-            companyName: "Company Name 2",
-            jobTitle: "Job Title 2",
-            jobDescription: "Job Description 2 Job Description 2",
+            companyName: "BrightPath Innovations",
+            jobTitle: "Marketing Coordinator",
+            jobDescription: "Drive marketing campaigns, manage social media, and analyze performance data to boost brand visibility and engagement.",
         },
         {
-            companyName: "Company Name 3",
-            jobTitle: "Job Title 3",
-            jobDescription: "Job Description 3 Job Description 3",
+            companyName: "SwiftStream Enterprises",
+            jobTitle: "Customer Support Specialist",
+            jobDescription: "Provide exceptional customer service, resolve inquiries, and ensure client satisfaction through effective communication.",
         },
 
     ];
@@ -32,7 +32,10 @@ export default function JobCard() {
     return (
         <div  className={"jobs-card-general-container"}>
             {jobData.map((job, index) => (
+
             <Card key={index} className={"jobs-card"}>
+                <div className={"card-split-left-right-container"}>
+                <div className={"jobs-card-left"}>
 
                 <Card.Body
                     style={{ textAlign: 'left' }} >
@@ -59,7 +62,15 @@ export default function JobCard() {
                     </Card.Text>
 
                 </Card.Body>
+                </div>
 
+                <div className={"jobs-card-right"}>
+
+                    <Button className={"apply-button"}>Apply</Button>
+
+                </div>
+
+                </div>
             </Card>
              ))}
         </div>

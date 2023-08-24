@@ -3,7 +3,6 @@ import '../../css/panel/JobApplyPanel.css';
 import * as React from "react";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
-import Button from "react-bootstrap/Button";
 import JobCard from "../cards/JobCard";
 
 export default function JobApplyPanel() {
@@ -19,10 +18,10 @@ export default function JobApplyPanel() {
                     <Tabs
                         defaultActiveKey="home"
                         id="uncontrolled-tab-example"
-                        className="mb-3">
+                        className="mb-3" >
 
 
-                        <Tab eventKey="home" title="Offers">
+                        <Tab eventKey="home"  title={<span style={{ color: "green" }}>Offers</span>} >
 
                             <div className={"job-apply-general-container"}>
 
@@ -40,7 +39,7 @@ export default function JobApplyPanel() {
                         </Tab>
 
 
-                        <Tab eventKey="profile" title="All">
+                        <Tab eventKey="profile" title={<span style={{ color: "green" }}>All</span>} >
 
 
 

@@ -10,13 +10,11 @@
     display: flex;
 }
 
-
-
 .job-apply-panel {
     background-color: var(--bg-secondary);
     color: var(--text-color);
     height: 100vh;
-    width: 55vw; /* Set width to 65% of viewport width */
+    width: 49vw; /* Set width to 65% of viewport width */
     border-radius: 0; /* Remove rounded borders */
     margin: 0; /* Remove margins */
     padding: 0; /* Remove padding */
