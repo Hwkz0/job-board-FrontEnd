@@ -1,0 +1,24 @@
+.hero-container {
+    position: relative;
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwcs.uwo.ca%2Fpublic%2Fcategory%2FcourseCategoryCertificateProfile.do%3Fmethod%3Dload%26certificateId%3D33095135%26selectedProgramAreaId%3D31206104%26selectedProgramStreamId%3D&psig=AOvVaw0TT4sLWodGGAmOdMAzpmzX&ust=1693029350576000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLCXnf-P94ADFQAAAAAdAAAAABAZ') center/cover no-repeat;
+    height: 400px; /* Set the desired height */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.hero-title-text {
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #559a3c, #6f4297);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+

@@ -3,6 +3,8 @@ import * as React from "react";
 import Card from "react-bootstrap/Card";
 import HomePageTitle from "../HomePageTitle";
 import HomePageCategories from "../HomePageCategories";
+import HomePageHero from "../HomePageHero";
+import {Col, Row} from "react-bootstrap";
 
 export default function HomePagePanel() {
 
@@ -13,11 +15,19 @@ export default function HomePagePanel() {
             <Card className={"home-page-panel"}>
 
                 <Card.Body>
-
-                    <HomePageTitle/>
+                    <Row>
+                        <Col md={5}>
+                            <div>
+                    <HomePageTitle/>  {/*TODO: MAKE FONT RESPONSIVE ADD BETTER FONT*/}
 
                     <HomePageCategories/>
+                            </div>
+                        </Col>
 
+                        <Col md={7}>
+                            <HomePageHero/>
+                        </Col>
+                    </Row>
                 </Card.Body>
 
 

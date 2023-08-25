@@ -1,7 +1,6 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import HomePagePanel from "../components/panels/HomePagePanel";
-import HomePageTitle from "../components/HomePageTitle";
+import HomePageHero from "../components/HomePageHero";
 
 
 export default function HomePage(){
@@ -11,6 +10,8 @@ export default function HomePage(){
 
 
                 <HomePagePanel/>
+
+
 
 
 

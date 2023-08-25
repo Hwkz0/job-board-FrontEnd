@@ -5,12 +5,11 @@
 }
 
 .home-page-categories-general-container {
-    display: flex;
+
 }
 
 .home-page-categories-card-container {
     background-color: var(--bg-secondary);
-    display: flex;
     width: 50vw;
     box-shadow: none; /* Remove shadows */
     border: none;
@@ -19,5 +18,7 @@
 .home-page-categories{
     text-align: left;
 }
+
+
 
 

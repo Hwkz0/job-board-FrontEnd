@@ -21,8 +21,7 @@
 }
 
 .event-apply-button {
-    background-color: #4CAF50; /* Green */
-    border: none;
+    border: 1px solid green;
     color: white;
     padding: 10px 20px; /* Adjust padding for smaller size */
     text-align: center;
@@ -36,7 +35,7 @@
 }
 
 .event-apply-button :hover {
-    background-color: #4CAF50;
+    background: rgba(144, 238, 144, 0.15);
     padding: 12px 24px; /* Adjust padding for smaller size */
     box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.24), 0 15px 40px 0 rgba(0, 0, 0, 0.19);
 }

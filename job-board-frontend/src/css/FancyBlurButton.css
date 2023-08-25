@@ -12,9 +12,10 @@
 
 .fancy-blur-button {
     all: unset;
-    width: 100px;
-    height: 40px;
-    font-size: 18px;
+    min-width: 7vw;    /* Minimum width of 7vw */
+    width: auto;       /* Let the width adjust to fit the content */
+    height: 5.2vh;  /*makes it responsive*/
+    font-size: 2.3vh; /*makes it responsive*/
     background: transparent;
     border-radius: 10px;
     position: relative;
