@@ -6,10 +6,12 @@ export default function HomePageSearchBar () {
     return (
 
         <div className="searchBox">
-            <FormControl className="searchInput" type="text" name="" placeholder="" />
+            <FormControl className="searchInput" type="text" name="" placeholder="Job search ..." />
+
             <Button className="searchButton" href="#">
-                Search
+                <div className={"searchIcon"}>Start</div>
             </Button>
+
         </div>
     );
 };

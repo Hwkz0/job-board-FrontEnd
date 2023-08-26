@@ -1,77 +1,85 @@
 :root {
-    --bg-accent: #2f3136;
-    --bg-secondary: #242526;
-    --text-color: #dadce1;
-    --border: 1px solid #474a4d;
-    --border-radius: 3px;
+    --bg-accent: #2f3136;        /* Background accent color */
+    --bg-secondary: #242526;     /* Secondary background color */
+    --text-color: #dadce1;       /* Text color */
+    --border: 1px solid #474a4d; /* Border color */
+    --border-radius: 3px;        /* Border radius */
 }
 
+/* Container for general fancy blur button layout */
 .fancy-blur-button-general-container {
-    display: flex;
+    display: flex; /* Display children in a flex layout */
 }
 
+/* Styling for individual fancy blur button */
 .fancy-blur-button {
-    all: unset;
-    min-width: 7vw;    /* Minimum width of 7vw */
-    width: auto;       /* Let the width adjust to fit the content */
-    height: 5.2vh;  /*makes it responsive*/
-    font-size: 2.3vh; /*makes it responsive*/
-    background: transparent;
-    border-radius: 10px;
-    position: relative;
-    cursor: pointer;
-    z-index: 1;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    all: unset;           /* Reset all properties */
+    min-width: 7vw;       /* Minimum width of 7vw */
+    width: auto;          /* Let the width adjust to fit the content */
+    height: 5.2vh;        /* Responsive height */
+    font-size: 2.3vh;     /* Responsive font size */
+    background: transparent; /* Transparent background */
+    border-radius: 10px;  /* Rounded corners */
+    position: relative;   /* Position relatively */
+    cursor: pointer;      /* Change cursor to pointer on hover */
+    z-index: 1;           /* Set z-index for stacking */
+    padding: 10px 20px;   /* Padding for button content */
+    display: flex;        /* Display children in a flex layout */
+    align-items: center;  /* Center align vertically */
+    justify-content: center; /* Center align horizontally */
+    white-space: nowrap;  /* Prevent line breaks */
+    user-select: none;    /* Prevent text selection */
+    -webkit-user-select: none; /* For Safari compatibility */
+    touch-action: manipulation; /* Optimize touch interactions */
 }
 
+/* Pseudo-elements for button effects */
 .fancy-blur-button::after,
 .fancy-blur-button::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -99999;
-    transition: all .4s;
-    border: 1px solid green;
+    content: '';             /* Empty content */
+    position: absolute;      /* Position absolutely */
+    bottom: 0;               /* Align at the bottom */
+    right: 0;                /* Align at the right */
+    z-index: -99999;         /* Set z-index for background */
+    transition: all .4s;     /* Transition effect */
+    border: 1px solid green; /* Border with green color */
 }
 
+/* Pseudo-element before button */
 .fancy-blur-button::before {
-    transform: translate(0%, 0%);
-    width: 100%;
-    height: 100%;
-    background: #28282d;
-    border-radius: 10px;
+    transform: translate(0%, 0%); /* Initial transformation */
+    width: 100%;                  /* Full width */
+    height: 100%;                 /* Full height */
+    background: #28282d;          /* Background color */
+    border-radius: 10px;          /* Rounded corners */
 }
 
+/* Pseudo-element after button */
 .fancy-blur-button::after {
-    transform: translate(10px, 10px);
-    width: 60px;
-    height: 30px;
-    background: rgba(255, 255, 255, 0.082);
-    border-radius: 10px;
+    transform: translate(10px, 10px); /* Initial transformation */
+    width: 60px;                       /* Width */
+    height: 30px;                      /* Height */
+    background: rgba(255, 255, 255, 0.082); /* Background color */
+    border-radius: 10px;               /* Rounded corners */
 }
 
+/* Hover effect for pseudo-element before button */
 .fancy-blur-button:hover::before {
-    transform: translate(5%, 28%);
-    width: 110%;
-    height: 110%;
+    transform: translate(5%, 28%); /* Transformation on hover */
+    width: 110%;                   /* Width on hover */
+    height: 110%;                  /* Height on hover */
 }
 
+/* Hover effect for pseudo-element after button */
 .fancy-blur-button:hover::after {
-    border-radius: 10px;
-    transform: translate(0, 0);
-    width: 100%;
-    height: 100%;
+    border-radius: 10px;   /* Rounded corners on hover */
+    transform: translate(0, 0); /* Transformation on hover */
+    width: 100%;           /* Width on hover */
+    height: 100%;          /* Height on hover */
 }
 
+/* Active effect for pseudo-element after button */
 .fancy-blur-button:active::after {
-    transition: 0.2s;
-    transform: translate(0, 10%);
+    transition: 0.2s;      /* Transition effect */
+    transform: translate(0, 10%); /* Transformation on active */
 }

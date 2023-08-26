@@ -1,27 +1,30 @@
 :root {
-    --bg-accent: #2f3136;
-    --bg-secondary: #484a4d;
-    --text-color: #dadce1;
-    --border: 1px solid #474a4d;
-    --border-radius: 3px;
+    --bg-accent: #2f3136;        /* Background accent color */
+    --bg-secondary: #484a4d;     /* Secondary background color */
+    --text-color: #dadce1;       /* Text color */
+    --border: 1px solid #474a4d; /* Border color */
+    --border-radius: 3px;        /* Border radius */
 }
 
+/* Container for general past jobs card layout */
 .past-jobs-card-general-container {
-    display: flex;
+    display: flex; /* Display children in a flex layout */
 }
 
+/* Styling for individual past jobs cards */
 .past-jobs-card {
-    background-color: var(--bg-accent);
-    border-radius: var(--border-radius);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    color: var(--text-color);
-    margin: 0 0 1rem;
-    padding: 1rem; /* Remove padding */
-    width: 22vw;
+    background-color: var(--bg-accent);    /* Set background color */
+    border-radius: var(--border-radius);   /* Use custom border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    color: var(--text-color);              /* Set text color */
+    margin: 0 0 1rem;                      /* Set margins (top, right, bottom) */
+    padding: 1rem;                         /* Add padding around the content */
+    width: 22vw;                           /* Set width as a percentage of viewport width */
 }
 
+/* Hover effect for past jobs cards */
 .past-jobs-card:hover {
-    background-color: var(--bg-secondary);
-    border: var(--border);
-    cursor: pointer;
+    background-color: var(--bg-secondary); /* Change background color on hover */
+    border: var(--border);                 /* Change border on hover */
+    cursor: pointer;                       /* Change cursor to pointer on hover */
 }

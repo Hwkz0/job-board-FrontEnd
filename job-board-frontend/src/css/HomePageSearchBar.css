@@ -1,62 +1,94 @@
-body {
-    background-image: linear-gradient(to right, #cb2d3e, #ef473a);
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default body margin */
-}
-
 .searchBox {
-    position: absolute;
-    top: 350px;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    background: #2f3640;
-    width: 400px; /* Make it wider */
-    height: 50px; /* Make it taller */
-    border-radius: 10px;
-    padding: 10px;
+    position: absolute;                 /* Position the container absolutely */
+    top: 330px;                         /* Position from the top */
+    left: 50%;                          /* Position from the left */
+    transform: translate(-50%, 50%);    /* Center horizontally and slightly below center vertically */
+    background: linear-gradient(to bottom, #2f3640, #39424b); /* Set background gradient */
+    width: 400px;                       /* Set width */
+    height: 70px;                       /* Set height */
+    border-radius: 10px;                /* Rounded corners */
+    padding: 10px;                      /* Add padding */
+    transition: border-color 1s ease;   /* Transition effect for border color */
+    border: 4px solid transparent;      /* Transparent border */
 }
 
+/* Hover effect for search input on search box */
 .searchBox:hover > .searchInput {
-    width: 240px;
-    padding: 0 6px;
+    min-width: 270px; /* Set minimum width */
+    padding: 0 6px;   /* Adjust padding */
 }
 
+/* Hover effect for search button on search box */
 .searchBox:hover > .searchButton {
-    background: rgba(70, 50, 70, 0.6);
-    color: #559a3c;
+    background: rgba(70, 50, 70, 0.8);         /* Change background color on hover */
+    border-color: rgba(82, 93, 105, 1);        /* Change border color on hover */
 }
 
+/* Styling for search button */
 .searchButton {
-    color: white;
-    float: right;
-    width: 100px;
-    height: 40px;
-    margin-top: 10px; /* Move it down by 10px */
-    border-radius: 15%;
-    border: 2px solid rgba(50, 70, 50, 0.8);;
-    background: rgba(70, 50, 70, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
+    color: white;                        /* Set text color */
+    float: right;                        /* Float to the right */
+    width: 100px;                        /* Set width */
+    height: 50px;                        /* Set height */
+    margin-top: 30px;                    /* Add margin on top */
+    border-radius: 20%;                  /* Rounded corners */
+    border: 3px solid rgba(82, 93, 105, 0.8); /* Border styling */
+    background: rgba(70, 50, 70, 0.7);   /* Set background color */
+    display: flex;                       /* Display children in a flex layout */
+    justify-content: center;             /* Center horizontally */
+    align-items: center;                 /* Center vertically */
+    transition: 0.3s;                    /* Transition effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
+/* Styling for search input */
 .searchInput {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 50px;
+    position: relative;                  /* Set position to relative */
+    background: none;                    /* Transparent background */
+    outline: none;                       /* Remove outline */
+    border: none;                        /* Remove border */
+    color: white;                        /* Set text color */
+    float: left;                         /* Float to the left */
+    padding: 0;                          /* Remove padding */
+    font-size: 20px;                     /* Set font size */
+    transition: 0.4s;                    /* Transition effect */
+    line-height: 40px;                   /* Set line height */
+    width: 270px;                        /* Set width */
 }
 
+/* Styling for search input placeholder */
+.searchInput::placeholder {
+    color: white;                        /* Set placeholder color */
+    opacity: 0.7;                        /* Set opacity */
+}
+
+/* Styling for focused search input */
+.searchInput:focus {
+    box-shadow: none;                    /* Remove box shadow */
+    background: none;                    /* Transparent background */
+    outline: none;                       /* Remove outline */
+    color: white;                        /* Set text color */
+}
+
+/* Styling for search box on focus */
+.searchBox:focus-within {
+    border-color: rgba(82, 93, 105, 0.8); /* Change border color on focus */
+}
+
+/* Media query for responsive design */
 @media screen and (max-width: 620px) {
     .searchBox:hover > .searchInput {
-        width: 150px;
-        padding: 0 6px;
+        width: 150px;                     /* Set width on hover for smaller screens */
+        padding: 0 6px;                   /* Adjust padding */
     }
+}
+
+/* Styling for search icon */
+.searchIcon {
+    font-size: 18px;                     /* Set font size for search icon */
+}
+
+/* Hover effect for search icon on search box */
+.searchBox:hover .searchIcon {
+    font-size: 20px;                     /* Change font size on hover */
 }

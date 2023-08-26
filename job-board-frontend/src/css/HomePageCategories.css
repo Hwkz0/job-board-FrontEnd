@@ -1,24 +1,23 @@
 :root {
-    --bg-accent: #2f3136;
-    --bg-secondary: #242526;
-    --text-color: #dadce1;
+    --bg-accent: #2f3136;    /* Background accent color */
+    --bg-secondary: #242526; /* Secondary background color */
+    --text-color: #dadce1;   /* Text color */
 }
 
+/* Container for general home page categories layout */
 .home-page-categories-general-container {
 
 }
 
+/* Container for home page categories cards */
 .home-page-categories-card-container {
-    background-color: var(--bg-secondary);
-    width: 50vw;
-    box-shadow: none; /* Remove shadows */
-    border: none;
+    background-color: transparent; /* Set background color as transparent */
+    width: 50vw;                   /* Set width as 50% of viewport width */
+    box-shadow: none;              /* Remove shadows */
+    border: none;                  /* Remove borders */
 }
 
-.home-page-categories{
-    text-align: left;
+/* Styling for home page categories */
+.home-page-categories {
+    text-align: left; /* Align text to the left */
 }
-
-
-
-
