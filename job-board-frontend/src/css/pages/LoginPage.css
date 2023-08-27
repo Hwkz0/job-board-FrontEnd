@@ -1,0 +1,13 @@
+:root {
+    --bg-accent: #484a4d;        /* Background accent color */
+    --text-color: #dadce1;       /* Text color */
+    --border: 1px solid #474a4d; /* Border color */
+    --border-radius: 3px;        /* Border radius */
+}
+
+/* Container for general card layout */
+.login-general-container {
+    display: flex;                  /* Display children in a flex layout */
+    justify-content: center;        /* Center align horizontally */
+    align-items: center;            /* Center align vertically */
+}

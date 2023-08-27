@@ -1,6 +1,6 @@
 import PastJobsPanel from "../components/panels/PastJobsPanel";
 import * as React from "react";
-import '../css/pages/FindJobs.css';
+import '../css/pages/JobsPage.css';
 import JobApplyPanel from "../components/panels/JobApplyPanel";
 import EventsPanel from "../components/panels/EventsPanel";
 

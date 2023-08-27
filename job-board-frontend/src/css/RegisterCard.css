@@ -1,0 +1,64 @@
+
+.register-card-general-container {
+    display: flex;                  /* Display children in a flex layout */
+    justify-content: center;        /* Center align horizontally */
+    align-items: center;            /* Center align vertically */
+    overflow: hidden;
+
+}
+
+.register-card {
+    background-color: var(--bg-accent); /* Set background color */
+    border-radius: 0; /* Set border radius */
+    color: var(--text-color);       /* Set text color */
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    width: 100vw;                    /* Set width */
+    height: 100vh;
+    border-left: 2px solid #474a4d;
+}
+
+.register-title {
+    font-size: 3rem;
+    font-weight: 650;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.register-card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.register-form-gap {
+    margin: 1rem 2rem;
+}
+
+.register-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 0;
+}
+
+.register-form-label {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    color: var(--text-color);
+}

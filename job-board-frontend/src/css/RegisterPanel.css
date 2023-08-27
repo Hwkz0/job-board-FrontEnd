@@ -1,0 +1,18 @@
+/* Container for general card layout */
+.register-panel-general-container {
+    display: flex;                  /* Display children in a flex layout */
+    justify-content: center;        /* Center align horizontally */
+    align-items: center;            /* Center align vertically */
+    overflow: hidden;
+}
+
+.register-panel-container {
+    background-color: var(--bg-accent); /* Set background color */
+    border-radius: 0; /* Set border radius */
+    color: var(--text-color);       /* Set text color */
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    height: 100vh;
+    border-left: 2px solid #474a4d;
+}

@@ -8,7 +8,7 @@ import OutlineButton from "../buttons/OutlineButton";
 
 export default function LoginCard() {
     return (
-        <div className="login-card-container">
+        <div className="login-card-general-container">
             <Card  className="login-card">
 
                 <Card.Body>
@@ -21,7 +21,7 @@ export default function LoginCard() {
                     <Form>
                         <Form.Group className="login-form" controlId="formGroupEmail">
 
-                            <Form.Label className="form-label">
+                            <Form.Label className="login-form-label">
                                 Email address
                             </Form.Label>
 

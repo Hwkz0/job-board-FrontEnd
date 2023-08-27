@@ -3,11 +3,11 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./layout/Navbar";
 import ApplicantList from "./pages/ApplicantList";
-import RegisterApplicant from "./pages/applicants/RegisterApplicant";
+import RegisterPage from "./pages/RegisterPage";
 import EditApplicant from "./pages/applicants/EditApplicant";
 import ViewApplicant from "./pages/applicants/ViewApplicant";
 import Login from "./pages/Login";
-import FindJobs from "./pages/FindJobs";
+import JobsPage from "./pages/JobsPage";
 import HomePage from "./pages/HomePage";
 
 
@@ -22,11 +22,11 @@ function App() {
 
               <Route exact path="/" element={<HomePage />} />
 
-              <Route exact path="/register" element={<RegisterApplicant />} />
+              <Route exact path="/register" element={<RegisterPage />} />
 
               <Route exact path="/login" element={<Login />} />
 
-              <Route exact path="/jobs" element={<FindJobs />} />
+              <Route exact path="/jobs" element={<JobsPage />} />
 
               <Route exact path="/applicant/view/:applicantId" element={<ViewApplicant />} />
 

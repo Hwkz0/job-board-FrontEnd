@@ -6,7 +6,7 @@
 }
 
 /* Container for general card layout */
-.login-card-container {
+.login-card-general-container {
     display: flex;                  /* Display children in a flex layout */
     justify-content: right;        /* Center align horizontally */
     align-items: center;            /* Center align vertically */
@@ -38,7 +38,7 @@
     color: var(--text-color);
 }
 
-.form-label {
+.login-form-label {
     font-size: 1.8rem;
     font-weight: 500;
     margin-top: 1rem;
