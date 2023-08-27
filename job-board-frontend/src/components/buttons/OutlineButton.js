@@ -8,10 +8,14 @@ export default function OutlineButton({ buttonText, outlineColor}){
 
     return(
 
-        <div className={"outline-button-general-container , mb-5"}>
+        <div className={"mb-5"}>
 
             <Container className={`outline-button ${outlineColor}`} >
+
+
                 {buttonText}
+
+
             </Container>
 
         </div>
@@ -23,6 +27,4 @@ export default function OutlineButton({ buttonText, outlineColor}){
 OutlineButton.propTypes = {
     buttonText: PropTypes.string.isRequired,
     outlineColor: PropTypes.string.isRequired,
-
-
 }

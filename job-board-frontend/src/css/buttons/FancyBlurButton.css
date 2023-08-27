@@ -1,36 +1,20 @@
-:root {
-    --bg-accent: #2f3136;        /* Background accent color */
-    --bg-secondary: #242526;     /* Secondary background color */
-    --text-color: #dadce1;       /* Text color */
-    --border: 1px solid #474a4d; /* Border color */
-    --border-radius: 3px;        /* Border radius */
-}
-
-/* Container for general fancy blur button layout */
-.fancy-blur-button-general-container {
-    display: flex; /* Display children in a flex layout */
-}
-
 /* Styling for individual fancy blur button */
 .fancy-blur-button {
-    all: unset;           /* Reset all properties */
-    min-width: 7vw;       /* Minimum width of 7vw */
-    width: auto;          /* Let the width adjust to fit the content */
+    all: unset;           /* Reset all properties so we got a fresh button */
+    margin-bottom: 1vh;   /* Margin bottom for spacing */
+    min-width: 7vw;       /* Responsive minimum width of 7vw since that seems reasonable*/
+    width: auto;          /* Let the width adjust to fit the text inside */
     height: 5.2vh;        /* Responsive height */
     font-size: 2.3vh;     /* Responsive font size */
-    background: transparent; /* Transparent background */
-    border-radius: 10px;  /* Rounded corners */
     position: relative;   /* Position relatively */
     cursor: pointer;      /* Change cursor to pointer on hover */
-    z-index: 1;           /* Set z-index for stacking */
+    z-index: 1;           /* Set z-index for stacking the blur box*/
     padding: 10px 20px;   /* Padding for button content */
     display: flex;        /* Display children in a flex layout */
     align-items: center;  /* Center align vertically */
     justify-content: center; /* Center align horizontally */
     white-space: nowrap;  /* Prevent line breaks */
-    user-select: none;    /* Prevent text selection */
-    -webkit-user-select: none; /* For Safari compatibility */
-    touch-action: manipulation; /* Optimize touch interactions */
+    user-select: none;    /* Prevent user selection */
 }
 
 /* Pseudo-elements for button effects */

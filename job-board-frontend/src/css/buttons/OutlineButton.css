@@ -1,44 +1,31 @@
-:root {
-    --bg-accent: #2f3136;        /* Background accent color */
-    --bg-secondary: #242526;     /* Secondary background color */
-    --text-color: #dadce1;       /* Text color */
-    --border: 1px solid #474a4d; /* Border color */
-    --border-radius: 3px;        /* Border radius */
-}
-
-/* Container for general outline button layout */
-.fancy-blur-button-general-container {
-    display: flex; /* Display children in a flex layout */
-}
-
+/* Styling for individual outline button */
 .outline-button {
-    appearance: none;
-    background-color: transparent;
-    border: 2px solid #1A1A1A;
-    border-radius: 15px;
-    box-sizing: border-box;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Roobert, sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: normal;
-    margin: 0;
-    min-height: 60px;
-    min-width: 200px;
-    outline: none;
-    padding: 16px 24px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 100%;
-    will-change: transform;
+    appearance: none; /* Remove default styling */
+    border: 2px solid #1A1A1A; /* Border with 2px width and color */
+    border-radius: 15px; /* Rounded corners */
+    box-sizing: border-box; /* Include borders in element dimensions */
+    color: white; /* Text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    display: inline-block; /* Display as inline-block element */
+    font-family: Roobert, sans-serif; /* Font family */
+    font-size: 2.8vh; /* Font size */
+    font-weight: 600; /* Font weight */
+    line-height: normal; /* Reset line height */
+    margin: 0; /* Reset margin */
+    min-height: 60px; /* Minimum height */
+    min-width: 200px; /* Minimum width */
+    outline: none; /* Remove outline when focused */
+    padding: 16px 24px; /* Padding inside the button */
+    text-align: center; /* Center-align text */
+    text-decoration: none; /* Remove text decoration */
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1); /* Transition effect */
+    user-select: none; /* Prevent user selection */
+    touch-action: manipulation; /* Optimize touch interactions */
+    width: 100%; /* Full width */
+    will-change: transform; /* Inform the browser about transform changes */
 }
 
+/* Outline color variations */
 .outline-button.blue-outline {
     border-color: #0051ff; /* Blue outline color */
 }
@@ -47,15 +34,16 @@
     border-color: red; /* Red outline color */
 }
 
-
+/* Hover effect */
 .outline-button:hover {
-    color: #fff;
-    background-color: #1A1A1A;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
+    color: #fff; /* Text color on hover */
+    background-color: #1A1A1A; /* Background color on hover */
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; /* Shadow on hover */
+    transform: translateY(-2px); /* Lift the button slightly on hover */
 }
 
+/* Active effect */
 .outline-button:active {
-    box-shadow: none;
-    transform: translateY(0);
+    box-shadow: none; /* Remove shadow on click */
+    transform: translateY(0); /* Reset vertical position on click */
 }

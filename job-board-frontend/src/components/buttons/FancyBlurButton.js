@@ -1,17 +1,17 @@
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
 import '../../css/buttons/FancyBlurButton.css';
 
 
-export default function FancyBlurButton({ buttonText }){
+export default function FancyBlurButton ({ buttonText }) {
 
     return(
 
-            <div className={"fancy-blur-button-general-container , mb-5"}>
+            <div className={"mb-5"}>
 
-                <Container className={"fancy-blur-button"} >
+                <button className={"fancy-blur-button"} >
+
                     {buttonText}
-                </Container>
+
+                </button>
 
             </div>
 

@@ -1,47 +1,93 @@
-import Card from "react-bootstrap/Card";
-import '../../css/card/HomePageCategories.css';
-import Button from "react-bootstrap/Button";
 import FancyBlurButton from "../buttons/FancyBlurButton";
 import {Col, Row} from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 
 
 export default function HomePageCategories(){
+
+    const containerStyles = {
+        backgroundColor: "transparent",
+        width: "50vw",
+        boxShadow: "none",
+        border: "none"
+    };
+
+    const categoriesStyles = {
+        textAlign: "left"
+    };
+
+
     return (
 
-        <div className={"home-page-categories-general-container"}>
+        <div
+            className={"mb-5"}>
 
-            <Card className={"home-page-categories-card-container"}>
+            <Card
+                style={containerStyles}>
 
-                <Card.Body>
+                <Card.Body style={categoriesStyles}>
 
                     <Row >
 
-                        <Col xs={4}  className="d-flex" ><FancyBlurButton buttonText={"Software Engineer"}/></Col>
+                        <Col
+                            xs={4}
+                            className="d-flex">
 
-                        <Col xs={4}  className="d-flex justify-content-left"> <FancyBlurButton buttonText={"CyberSecurity"}/> </Col>
+                            <FancyBlurButton
+                                buttonText={"Software Engineer"}/>
 
+                        </Col>
 
-                    </Row>
+                        <Col
+                            xs={4}
+                            className="d-flex justify-content-left">
 
-                    <Row>
-                        <Col xs={4}  className="d-flex"> <FancyBlurButton buttonText={"Network Architects"}/> </Col>
+                            <FancyBlurButton
+                                buttonText={"CyberSecurity"}/>
 
-                        <Col xs={3}   className="d-flex"><FancyBlurButton buttonText={"Web developer"}/></Col>
-                    </Row>
-
-                    <Row>
-
-                        <Col xs={4} className="d-flex" style={{ marginLeft: '0.7vw' }}>
-                            <FancyBlurButton buttonText={" Database administrators and architects "}/>
                         </Col>
 
                     </Row>
 
 
+                    <Row>
+
+                        <Col
+                            xs={4}
+                            className="d-flex">
+
+                            <FancyBlurButton
+                                buttonText={"Network Architects"}/>
+
+                        </Col>
+
+                        <Col
+                            xs={4}
+                            className="d-flex ">
+
+                            <FancyBlurButton
+                                buttonText={"Web developer"}/>
+
+                        </Col>
+
+                    </Row>
+
+
+                    <Row>
+
+                        <Col
+                            xs={4}
+                            className="d-flex"
+                            style={{ marginLeft: '0.7vw' }}>
+
+                            <FancyBlurButton
+                                buttonText={" Database administrators and architects "}/>
+
+                        </Col>
+
+                    </Row>
+
                 </Card.Body>
-
-
-
 
             </Card>
 
