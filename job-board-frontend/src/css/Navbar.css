@@ -37,7 +37,7 @@
 
 /* Styling for navigation bar */
 .navbar {
-    background: linear-gradient(70deg, #242526, rgba(5, 43, 10, 0.91),#242526,#242526,#242526,#242526,#242526, #242526); /* Set gradient background */
+    background: linear-gradient(120deg , #242526,rgba(5, 43, 10, 0.95),#242526,#242526,#242526,#242526, #242526,rgba(67, 36, 94, 0.95), #242526); /* Set gradient background */
     height: var(--nav-size);         /* Set height */
     width: 100%;                     /* Set width */
     border-bottom: var(--border);    /* Set border at the bottom */

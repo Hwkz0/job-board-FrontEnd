@@ -14,7 +14,7 @@
 /* Styling for individual home page panel */
 .home-page-panel {
     background-size: cover; /* Set background size to cover */
-    background: linear-gradient(70deg, #242526, #242526, rgba(5, 43, 10, 0.91), #242526, #242526, #242526, #242526, #242526); /* Set gradient background */
+    background: linear-gradient(70deg, #242526, #242526, #242526, rgba(5, 43, 10, 0.91), #242526, #242526, #242526, #242526, #242526, #242526, rgba(67, 36, 94, 0.87), #242526) ; /* Set gradient background */
     position: absolute; /* Position the element absolutely */
     color: var(--text-color); /* Set text color */
     height: 100vh; /* Set height as 100% of viewport height */

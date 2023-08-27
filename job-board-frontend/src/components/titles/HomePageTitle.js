@@ -1,5 +1,5 @@
 import Card from "react-bootstrap/Card";
-import '../css/HomePageTitle.css';
+import '../../css/titles/HomePageTitle.css';
 
 
 export default function HomePageTitle(){

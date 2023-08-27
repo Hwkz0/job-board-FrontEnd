@@ -1,7 +1,7 @@
 import Card from "react-bootstrap/Card";
-import '../css/HomePageCategories.css';
+import '../../css/card/HomePageCategories.css';
 import Button from "react-bootstrap/Button";
-import FancyBlurButton from "./FancyBlurButton";
+import FancyBlurButton from "../buttons/FancyBlurButton";
 import {Col, Row} from "react-bootstrap";
 
 

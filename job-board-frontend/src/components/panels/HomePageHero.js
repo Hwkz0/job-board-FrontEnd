@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import '../css/HomePageHero.css';
-import HomePageSearchBar from "./HomePageSearchBar";
+import '../../css/panel/HomePageHero.css';
+import HomePageSearchBar from "../searchbar/HomePageSearchBar";
 
 export default function HomePageHero (){
     return (
@@ -12,7 +12,7 @@ export default function HomePageHero (){
                 <Row>
                     <Col>
 
-                        <h1 className={"hero-title-text"}>Talent Meets Opportunities</h1>
+                        <h1 className={"hero-title-text"}>Talent Meets <br/> Opportunities</h1>
 
                     </Col>
                 </Row>

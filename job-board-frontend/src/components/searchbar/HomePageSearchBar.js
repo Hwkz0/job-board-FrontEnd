@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/HomePageSearchBar.css';
+import '../../css/searchbar/HomePageSearchBar.css';
 import {Button, FormControl} from "react-bootstrap";
 
 export default function HomePageSearchBar () {

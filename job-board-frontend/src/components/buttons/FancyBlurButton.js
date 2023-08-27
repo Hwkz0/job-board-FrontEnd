@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import '../css/FancyBlurButton.css';
+import '../../css/buttons/FancyBlurButton.css';
 
 
 export default function FancyBlurButton({ buttonText }){

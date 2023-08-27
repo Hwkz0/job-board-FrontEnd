@@ -1,0 +1,106 @@
+:root {
+    --bg-accent: #484a4d;        /* Background accent color */
+    --text-color: #dadce1;       /* Text color */
+    --border: 1px solid #474a4d; /* Border color */
+    --border-radius: 3px;        /* Border radius */
+}
+
+/* Container for general card layout */
+.login-card-container {
+    display: flex;                  /* Display children in a flex layout */
+    justify-content: right;        /* Center align horizontally */
+    align-items: center;            /* Center align vertically */
+    overflow: hidden;
+
+}
+
+
+/* Styling for individual card */
+.login-card {
+    background-color: var(--bg-accent); /* Set background color */
+    border-radius: 0; /* Set border radius */
+    color: var(--text-color);       /* Set text color */
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    width: 40vw;                    /* Set width */
+    height: 100vh;
+}
+
+.login-title {
+    font-size: 3rem;
+    font-weight: 650;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.form-label {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.login-form {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for switch */
+.login-switch {
+    font-size: 1.8rem;
+    position: relative; /* Set position to relative */
+    text-align: left;
+    display: inline-block;          /* Display as inline-block element */
+    margin-top: 2rem;               /* Add margin on top */
+    margin-bottom: 2rem;
+    width: 40vw;                   /* Set width */
+    height: 34px;                   /* Set height */
+    float: left;                    /* Float to the left */
+}
+
+
+.no-account-link {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 500;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.login-register-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.login-button {
+    background-color: #0058ff;
+    border-radius: 10px;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    width: 10rem;
+    height: 4rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+

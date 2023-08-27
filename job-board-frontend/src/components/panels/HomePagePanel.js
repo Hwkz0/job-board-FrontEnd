@@ -1,9 +1,9 @@
 import '../../css/panel/HomePagePanel.css';
 import * as React from "react";
 import Card from "react-bootstrap/Card";
-import HomePageTitle from "../HomePageTitle";
-import HomePageCategories from "../HomePageCategories";
-import HomePageHero from "../HomePageHero";
+import HomePageTitle from "../titles/HomePageTitle";
+import HomePageCategories from "../cards/HomePageCategories";
+import HomePageHero from "./HomePageHero";
 import {Col, Row} from "react-bootstrap";
 
 export default function HomePagePanel() {
