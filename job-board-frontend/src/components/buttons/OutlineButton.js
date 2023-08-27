@@ -1,5 +1,5 @@
 import Container from "react-bootstrap/Container";
-import '../css/buttons/OutlineButton.css';
+import '../../css/buttons/OutlineButton.css';
 import PropTypes from "prop-types";
 
 

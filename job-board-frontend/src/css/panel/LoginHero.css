@@ -1,0 +1,31 @@
+.login-hero-container {
+    position: relative; /* Position the container relatively */
+    height: 100vh;
+}
+
+/* Styling for hero content */
+.login-hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    padding-top: 100px; /* Adjust this value as needed */
+    background: radial-gradient(circle at bottom left, #9a5c3c, #2f3136);
+}
+
+
+/* Styling for hero title text */
+.login-hero-title-text {
+    font-size: 75px;                   /* Set font size */
+    font-weight: 600;                  /* Set font weight */
+    background-image: linear-gradient(190deg, #559a3c, #6f4297); /* Set background gradient */
+    color: transparent;                /* Make text color transparent */
+    background-clip: text;             /* Apply background to the text */
+    opacity: 1;                        /* Set opacity to 1 */
+    -webkit-background-clip: text;     /* Apply background to text for Safari */
+    padding-bottom: 300px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow */
+}

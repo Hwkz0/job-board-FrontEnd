@@ -15,7 +15,7 @@ export default function HomePagePanel() {
             <Card className={"home-page-panel"}>
 
                 <Card.Body>
-                    <Row>
+                    <Row >
                         <Col md={5}>
                             <div>
                     <HomePageTitle/>  {/*TODO: MAKE FONT RESPONSIVE ADD BETTER FONT*/}

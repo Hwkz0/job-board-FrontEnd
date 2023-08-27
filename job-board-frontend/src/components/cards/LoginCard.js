@@ -1,9 +1,9 @@
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import {Button} from "react-bootstrap";
-import '../css/LoginCard.css';
+import '../../css/card/LoginCard.css';
 import {Link} from "react-router-dom";
-import OutlineButton from "./OutlineButton";
+import OutlineButton from "../buttons/OutlineButton";
 
 
 export default function LoginCard() {
