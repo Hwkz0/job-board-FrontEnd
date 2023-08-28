@@ -5,14 +5,11 @@ import Card from "react-bootstrap/Card";
 
 export default function HomePageCategories(){
 
-    const containerStyles = {
+    const homePageCategoriesCardStyles = {
         backgroundColor: "transparent",
         width: "50vw",
         boxShadow: "none",
-        border: "none"
-    };
-
-    const categoriesStyles = {
+        border: "none",
         textAlign: "left"
     };
 
@@ -23,11 +20,11 @@ export default function HomePageCategories(){
             className={"mb-5"}>
 
             <Card
-                style={containerStyles}>
+                style={homePageCategoriesCardStyles}>
 
-                <Card.Body style={categoriesStyles}>
+                <Card.Body>
 
-                    <Row >
+                    <Row>
 
                         <Col
                             xs={4}
@@ -76,9 +73,10 @@ export default function HomePageCategories(){
                     <Row>
 
                         <Col
+                            style={{ marginLeft: '0.7vw' }}>
                             xs={4}
                             className="d-flex"
-                            style={{ marginLeft: '0.7vw' }}>
+
 
                             <FancyBlurButton
                                 buttonText={" Database administrators and architects "}/>
