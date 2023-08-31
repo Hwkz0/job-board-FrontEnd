@@ -1,5 +1,4 @@
 import Card from "react-bootstrap/Card";
-import '../../css/card/PastJobsCard.css';
 import * as React from "react";
 
 
@@ -29,36 +28,73 @@ export default function PastJobsCard() {
         },
     ];
 
+    const pastJobsCardStyles = {
+        backgroundColor: 'var(--bg-accent)',
+        borderRadius: 'var(--border-radius)',
+        boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)',
+        color: 'var(--text-color)',
+        margin: '0 0 1rem 0',
+        padding: '1rem',
+        width: '22vw',
+    }
 
+    const pastJobsCardHoverStyles = {
+        backgroundColor: 'var(--bg-secondary)',
+        border: 'var(--border)',
+        cursor: 'pointer',
+    }
 
 
     return pastJobData.map((pastJob, index) => (
 
-        <div key={index} className={"past-jobs-general-container"}>
-            <Card className={"past-jobs-card"}>
+        <div
+            key={index}>
+            <Card
+                style={pastJobsCardStyles}
+                onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = pastJobsCardHoverStyles.backgroundColor;
+                    e.currentTarget.style.border = pastJobsCardHoverStyles.border;
+                    e.currentTarget.style.cursor = pastJobsCardHoverStyles.cursor;
+                }}
+                onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = pastJobsCardStyles.backgroundColor;
+                    e.currentTarget.style.border = pastJobsCardStyles.border;
+                    e.currentTarget.style.cursor = pastJobsCardStyles.cursor;
+                }}
+            >
 
                 {/*JOB TITLE HERE*/}
 
-                    <Card.Header style={{fontSize:' 18px'}}>
+                    <Card.Header
+                        style={{fontSize:' 18px'}}>
+
                         {pastJob.jobTitle}
+
                     </Card.Header>
 
                 {/*COMPANY NAME HERE*/}
 
                     <Card.Body>
-                        <Card.Title style={{fontSize:' 14px'}}>
+                        <Card.Title
+                            style={{fontSize:' 14px'}}>
+
                             {pastJob.companyName}
+
                         </Card.Title>
 
                         {/*EMPLOYMENT DATE HERE*/}
 
-                        <Card.Title style={{fontSize:' 14px'}}>
+                        <Card.Title
+                            style={{fontSize:' 14px'}}>
+
                             {pastJob.employmentDate}
+
                         </Card.Title>
 
                         {/*JOB PAY HERE*/}
 
-                        <Card.Text style={{fontSize:' 12px'}}>
+                        <Card.Text
+                            style={{fontSize:' 12px'}}>
 
                             {pastJob.jobPay}
 
