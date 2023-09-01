@@ -1,4 +1,3 @@
-import '../../css/panel/HomePagePanel.css';
 import * as React from "react";
 import Card from "react-bootstrap/Card";
 import HomePageTitle from "../titles/HomePageTitle";
@@ -8,32 +7,58 @@ import {Col, Row} from "react-bootstrap";
 
 export default function HomePagePanel() {
 
+    const homePagePanelStyle = {
+        backgroundSize: "cover",
+        background: "linear-gradient(70deg, #242526, #242526, #242526, rgba(5, 43, 10, 0.91), " +
+                                                " #242526, #242526, #242526, #242526, #242526, " +
+                                                " #242526, rgba(67, 36, 94, 0.87), #242526) ",
+        position: "absolute",
+        color: "var(--text-color)",
+        height: "100vh",
+        width: "100vw",
+        borderRadius: "0",
+        margin: "0",
+        padding: "0",
+        overflow: "hidden",
+    };
+
+
+
     return (
 
-        <div className={"home-page-general-container"}>
 
-            <Card className={"home-page-panel"}>
+            <Card
+                style={homePagePanelStyle}>
 
                 <Card.Body>
-                    <Row >
-                        <Col md={5}>
+
+                    <Row>
+
+                        <Col
+                            md={5}>
+
                             <div>
-                    <HomePageTitle/>  {/*TODO: MAKE FONT RESPONSIVE ADD BETTER FONT*/}
 
-                    <HomePageCategories/>
+                                <HomePageTitle/>
+
+                                <HomePageCategories/>
+
                             </div>
+
                         </Col>
 
-                        <Col md={7}>
+                        <Col
+                            md={7}>
+
                             <HomePageHero/>
+
                         </Col>
+
                     </Row>
+
                 </Card.Body>
 
-
             </Card>
-
-        </div>
 
     );
 }

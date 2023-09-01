@@ -73,9 +73,10 @@ export default function HomePageCategories(){
                     <Row>
 
                         <Col
-                            style={{ marginLeft: '0.7vw' }}>
+                            style={{ marginLeft: '0.7vw' }}
                             xs={4}
-                            className="d-flex"
+                            className="d-flex">
+
 
 
                             <FancyBlurButton
