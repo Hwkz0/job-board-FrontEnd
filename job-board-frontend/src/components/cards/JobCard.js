@@ -110,6 +110,7 @@ export default function JobCard() {
                       e.currentTarget.style.cursor = jobCardHoverStyles.cursor;
                       e.currentTarget.style.transition = jobCardHoverStyles.transition;
                   }}
+
                   onMouseLeave={(e) => {
                       e.currentTarget.style.backgroundColor = jobCardStyles.backgroundColor;
                       e.currentTarget.style.border = jobCardStyles.border;
@@ -166,6 +167,7 @@ export default function JobCard() {
                             e.currentTarget.style.padding = jobCardButtonHoverStyles.padding;
                             e.currentTarget.style.boxShadow = jobCardButtonHoverStyles.boxShadow;
                         }}
+
                         onMouseLeave={(e) => {
                             e.currentTarget.style.backgroundColor = jobCardButtonStyles.backgroundColor;
                             e.currentTarget.style.padding = jobCardButtonStyles.padding;

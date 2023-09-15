@@ -38,13 +38,36 @@ export default function EditApplicant() {
     }
 
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md-6 offset-md-3 border rounded pt-4 mt-2 shadow">
-                    <h2 className="text-center mb-4">Edit Applicant</h2>
-                    <form onSubmit={e => onSubmit(e)}>
-                        <div className="mb-3">
-                            <label htmlFor="applicantFirstName" className="form-label">First Name</label>
+        <div
+            className="container">
+
+            <div
+                className="row">
+
+                <div
+                    className="col-md-6 offset-md-3 border rounded pt-4 mt-2 shadow">
+
+                    <h2
+                        className="text-center mb-4">
+
+                        Edit Applicant
+
+                    </h2>
+
+                    <form
+                        onSubmit={e => onSubmit(e)}>
+
+                        <div
+                            className="mb-3">
+
+                            <label
+                                htmlFor="applicantFirstName"
+                                className="form-label">
+
+                                First Name
+
+                            </label>
+
                             <input
                                 type="text"
                                 className="form-control"
@@ -54,10 +77,19 @@ export default function EditApplicant() {
                                 value={applicantFirstName}
                                 onChange={e => onInputChange(e)}
                             />
+
                         </div>
 
-                        <div className="mb-3">
-                            <label htmlFor="applicantLastName" className="form-label">Last Name</label>
+                        <div
+                            className="mb-3">
+                            <label
+                                htmlFor="applicantLastName"
+                                className="form-label">
+
+                                Last Name
+
+                            </label>
+
                             <input
                                 type="text"
                                 className="form-control"
@@ -67,10 +99,19 @@ export default function EditApplicant() {
                                 value={applicantLastName}
                                 onChange={e => onInputChange(e)}
                             />
+
                         </div>
 
-                        <div className="mb-3">
-                            <label htmlFor="applicantEmailAddress" className="form-label">Email Address</label>
+                        <div
+                            className="mb-3">
+                            <label
+                                htmlFor="applicantEmailAddress"
+                                className="form-label">
+
+                                Email Address
+
+                            </label>
+
                             <input
                                 type="email"
                                 className="form-control"
@@ -80,10 +121,19 @@ export default function EditApplicant() {
                                 value={applicantEmailAddress}
                                 onChange={e => onInputChange(e)}
                             />
+
                         </div>
 
-                        <div className="mb-3">
-                            <label htmlFor="applicantPassword" className="form-label">Password</label>
+                        <div
+                            className="mb-3">
+                            <label
+                                htmlFor="applicantPassword"
+                                className="form-label">
+
+                                Password
+
+                            </label>
+
                             <input
                                 type="password"
                                 className="form-control"
@@ -93,10 +143,20 @@ export default function EditApplicant() {
                                 value={applicantPassword}
                                 onChange={e => onInputChange(e)}
                             />
+
                         </div>
 
-                        <div className="mb-3">
-                            <label htmlFor="applicantPhoneNumber" className="form-label">Phone Number</label>
+                        <div
+                            className="mb-3">
+
+                            <label
+                                htmlFor="applicantPhoneNumber"
+                                className="form-label">
+
+                                Phone Number
+
+                            </label>
+
                             <input
                                 type="text"
                                 className="form-control"
@@ -106,18 +166,31 @@ export default function EditApplicant() {
                                 value={applicantPhoneNumber}
                                 onChange={e => onInputChange(e)}
                             />
+
                         </div>
 
-                        <button type="submit" className="btn btn-primary">
+                        <button
+                            type="submit"
+                            className="btn btn-primary">
+
                             Edit Applicant
+
                         </button>
 
-                        <Link className="btn btn-outline-danger my-2" to="/">
+                        <Link
+                            className="btn btn-outline-danger my-2"
+                            to="/">
+
                             Back to Home
+
                         </Link>
+
                     </form>
+
                 </div>
+
             </div>
+            
         </div>
     );
 }

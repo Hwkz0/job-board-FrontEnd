@@ -1,18 +1,35 @@
 import Card from "react-bootstrap/Card";
-import '../../css/titles/HomePageTitle.css';
-
 
 export default function HomePageTitle(){
+
+    const homePageTitleCardContainerStyle = {
+        backgroundColor: "transparent",
+        display: "flex",
+        width: "35vw",
+        boxShadow: "none",
+        border: "none",
+    }
+
+
     return (
 
-        <div className={"home-page-title-general-container"}>
+        <div
+            style={{display: "flex"}}>
 
-            <Card className={"home-page-title-card-container"}>
+            <Card
+                style={homePageTitleCardContainerStyle}>
 
                 <Card.Body>
 
                     <Card.Title>
-                        <h1 className={"home-page-title"}>The Innovative Job Platform that ignites Your Career</h1>
+
+                        <h1
+                            style={{textAlign: "left"}}>
+
+                            The Innovative Job Platform that ignites Your Career
+
+                        </h1>
+
                     </Card.Title>
 
                 </Card.Body>

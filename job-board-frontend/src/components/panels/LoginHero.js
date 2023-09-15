@@ -14,7 +14,7 @@ export default function LoginHero (){
         textAlign: "center",
         paddingTop: "100px",
         background: "radial-gradient(circle at bottom left, #9a5c3c, #2f3136)"
-    }
+    };
 
     const loginHeroTitleTextStyle = {
         fontSize: "75px",
@@ -26,7 +26,7 @@ export default function LoginHero (){
         webkitBackgroundClip: "text",
         paddingBottom: "300px",
         textShadow: "2px 2px 4px rgba(0,0,0,0.1)"
-    }
+    };
 
 
 

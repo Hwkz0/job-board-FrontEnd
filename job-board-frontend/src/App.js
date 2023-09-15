@@ -1,14 +1,13 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./layout/Navbar";
-import ApplicantList from "./pages/ApplicantList";
-import RegisterPage from "./pages/RegisterPage";
-import EditApplicant from "./pages/applicants/EditApplicant";
-import ViewApplicant from "./pages/applicants/ViewApplicant";
-import Login from "./pages/Login";
-import JobsPage from "./pages/JobsPage";
-import HomePage from "./pages/HomePage";
+import Navbar from "./components/layout/Navbar";
+import RegisterPage from "./components/pages/RegisterPage";
+import EditApplicant from "./components/pages/applicants/EditApplicant";
+import ViewApplicant from "./components/pages/applicants/ViewApplicant";
+import Login from "./components/pages/Login";
+import JobsPage from "./components/pages/JobsPage";
+import HomePage from "./components/pages/HomePage";
 
 
 function App() {

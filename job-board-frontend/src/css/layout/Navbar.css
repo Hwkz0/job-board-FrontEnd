@@ -8,33 +8,6 @@
     --speed: 500ms;                  /* Transition speed */
 }
 
-/* Container for general card layout */
-.card-container {
-    display: flex;                   /* Display children in a flex layout */
-    justify-content: center;         /* Center align horizontally */
-    align-items: center;             /* Center align vertically */
-}
-
-/* Styling for individual card */
-.card {
-    background-color: var(--bg-accent); /* Set background color */
-    border-radius: var(--border-radius); /* Set border radius */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 2); /* Add box shadow */
-    color: var(--text-color);        /* Set text color */
-    padding: 1rem;                   /* Set padding */
-    margin: 1rem;                    /* Set margin */
-    width: 25rem;                    /* Set width */
-}
-
-/* Styling for switch */
-.switch {
-    position: relative;              /* Set position to relative */
-    display: inline-block;           /* Display as inline-block element */
-    width: 160px;                    /* Set width */
-    height: 34px;                    /* Set height */
-    float: left;                     /* Float to the left */
-}
-
 /* Styling for navigation bar */
 .navbar {
     background: linear-gradient(120deg , #242526,rgba(5, 43, 10, 0.95),#242526,#242526,#242526,#242526, #242526,rgba(67, 36, 94, 0.95), #242526); /* Set gradient background */
